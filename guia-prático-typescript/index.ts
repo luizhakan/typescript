@@ -86,3 +86,46 @@ let dia: any = DiaDaSemana[19]; // Terca
 let diaNumero = DiaDaSemana[dia]; // 19
 let diaString = DiaDaSemana["Segunda"]; // 18
 console.log("Dia da semana : " + dia + ", " + diaNumero); // 19
+
+var exemploVariavel: string | number /*| boolean*/ = 9;
+console.log("exemplo variável número " + exemploVariavel);
+exemploVariavel = "ABC";
+console.log("exemplo variável string " + exemploVariavel);
+
+var uArr: number[] | string[];
+var i: number;
+uArr = [1, 2, 4];
+
+for (i = 0; i < uArr.length; i++) {
+  console.log(uArr[i]);
+}
+
+uArr = ["A", "B", "C", "D"];
+
+for (i = 0; i < uArr.length; i++) {
+  console.log(uArr[i]);
+}
+
+function deleteTeste(usuario: string | string[]) {
+  if (typeof usuario == "string") {
+    console.log(usuario + ",", " DELETADO");
+  } else {
+    var i;
+    for (i = 0; i < usuario.length; i++) {
+      console.log(usuario[i] + "," + " DELETADO");
+    }
+  }
+}
+console.log(deleteTeste(["Luiz", "Hakan"]));
+
+/*VOID*/
+/*
+O type void é bastante utilizado em funções. Diferente do type any ,
+que espera o retorno de qualquer valor, o void passa para o
+compilador que aquela função não terá nenhum retorno.
+*/
+
+function log(): void {
+  console.log("sem retorno");
+}
+log();
