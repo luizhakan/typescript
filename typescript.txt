@@ -1,0 +1,11 @@
+/*Importação de módulo nativo do ECMAScript*/
+O atributo type="module" indica para o navegador que o arquivo a ser carregado, deve ser tratado como um módulo, e não um script
+
+/*Módulo e seu escopo*/
+Tudo o que for declarado dentro de um módulo estará confinado nesse módulo, ao menos que o desenvolvedor decida exportar uma ou mais funcionalidades
+
+/*Sobre o compilador do TypeScript*/
+O uso do Node.js não é opcional, pois o compilador depende desta plataforma para funcionar, inclusive é baixado pelo seu gerenciador de pacotes npm. Além disso, o código TypeScript precisa ser traduzido/convertido para um código ECMASCRIPT para que seja entendido pelo navegador. Apenas ECMASCRIPT é suportado pelo navegador.
+
+/*tsconfig.json*/
+A propriedade "target" indica para o compilador tsc para qual versão do JavaScript o código escrito em TypeScript deve ser compilado. Isso significa que o resultado final serão arquivos JavaScript sem qualquer referência a sintaxe do TypeScript.
