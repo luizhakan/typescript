@@ -1,4 +1,5 @@
 "use strict";
+var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DiaDaSemana = void 0;
 var languages = [];
@@ -109,3 +110,46 @@ function log() {
     console.log("sem retorno");
 }
 log();
+let perfil = "root";
+// let perfil = null;
+console.log((_a = "ternário: " + perfil) !== null && _a !== void 0 ? _a : "Usuário comum");
+/*
+Ao TypeScript 3.7 foi adicionada uma funcionalidade chamada
+Nullish Coalescing , que nos permite verificar se um valor é null ou
+undefined utilizando os operadores ??
+*/
+// switch case
+console.log("switch case: ");
+switch (perfil) {
+    case "root":
+        console.log("root");
+        break;
+    case "manager":
+        console.log("gerente");
+        break;
+    case "admin":
+        console.log("administrador");
+        break;
+    case "user":
+        console.log("usuário comum");
+        break;
+    default:
+        "usuário inválido";
+        break;
+}
+let condicao = true;
+while (condicao) {
+    console.log("while : ");
+    console.log("carregando...");
+    condicao = false;
+}
+let linguagens = ["JavaScript", "TypeScript", "C", "C++"];
+console.log("array: " + linguagens);
+// console.log("for: ");
+// for (i = 0; i < linguagens.length; i++) {
+//   console.log(linguagens[i]);
+// }
+console.log('forEach : ');
+linguagens.forEach((element) => {
+    console.log(element);
+});
