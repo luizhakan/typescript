@@ -3,11 +3,11 @@
 class Conta {
   numeroDaConta: number;
   titular: string;
-  private saldo: number = 0;
+  private saldo: number;
   constructor(numeroDaConta: number, titular: string, saldo: number) {
     this.numeroDaConta = numeroDaConta;
-    this.titular = titular;
-    this.saldo = saldo;
+    this.titular = titular.toUpperCase();
+    this.saldo = saldo = 0;
   }
 
   consultaSaldo(): string {
@@ -25,12 +25,23 @@ class Conta {
   }
 }
 
+class ContaPF extends Conta{
+    cpf: number;
+    constructor(cpf:number, numeroDaConta:number, titular:string, saldo:number){
+        super(numeroDaConta, titular, saldo)
+        this.cpf = cpf;
+    }
+}
+class ContaPJ extends Conta{
+    cnpj: number;
+    constructor(cnpj:number, numeroDaConta: number, titular:string, saldo:number){
+        super(numeroDaConta, titular, saldo)
+        this.cnpj = cnpj;
+    }
+}
+
 // utilizamos a palavra reservada new para instanciar/criar um novo objeto
-const primeiraConta = new Conta(1, "Luiz", 0);
-console.log(primeiraConta);
-primeiraConta.adicionaSaldo(99);
-console.log(primeiraConta);
-primeiraConta.adicionaSaldo(99901);
-console.log(primeiraConta);
-primeiraConta.sacarDoSaldo(11);
-console.log(primeiraConta);
+const primeiraContaPF = new ContaPF(11122233312,1, "Luiz Hakan", 0);  // o saldo está privado, mas por qual motivo eu coloquei o terceiro parâmetro então? é que no typescript, se temos um constructor com 3 atributos, quando chamamos a classe, devemos usar os 3 atributos
+console.log(primeiraContaPF);
+const primeiraContaPJ = new ContaPJ(12123456789012, 2, 'João Victor', 0)
+console.log(primeiraContaPJ)
