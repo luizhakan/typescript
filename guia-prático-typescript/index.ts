@@ -172,7 +172,39 @@ console.log("array: " + linguagens);
 // for (i = 0; i < linguagens.length; i++) {
 //   console.log(linguagens[i]);
 // }
-console.log('forEach : ')
+console.log("forEach : ");
 linguagens.forEach((element) => {
   console.log(element);
 });
+
+interface Pessoa {
+  nome: string;
+  idade: number;
+  email: string;
+  telefone: number;
+}
+
+let pessoa: Pessoa = {
+  nome: "Bill",
+  idade: 69,
+  email: "billgates@microsoft.com",
+  telefone: 887729,
+};
+
+interface PessoaJuridica extends Pessoa {
+  conta: number;
+  cpnj: number;
+}
+// neste exemplo, PessoaJuridica estende as propriedades da interface Pessoa, e adiciona mais duas.
+interface IPessoa {
+  nome: string;
+  idade: number;
+  email: string;
+  telefone?: number;
+}
+let iPessoa: IPessoa = {
+  nome: "Luiz",
+  idade: 19,
+  email: "luizhakan2@protonmail.com",
+};
+// percebe que na interface IPessoa eu defini 4 propriedades, mas o telefone tem um '?'?, então este '?' significa que a propriedade é opcional, então depende do usuário colocar um valor ou não colocar um valor nesta propriedade.
