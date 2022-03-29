@@ -163,3 +163,39 @@ let iPessoa = {
   email: "luizhakan2@protonmail.com",
 };
 // percebe que na interface IPessoa eu defini 4 propriedades, mas o telefone tem um '?'?, então este '?' significa que a propriedade é opcional, então depende do usuário colocar um valor ou não colocar um valor nesta propriedade.
+// genéricos
+function funcaoGenerica(value) {
+  return value;
+}
+console.log("Função genérica numéro : " + funcaoGenerica(3));
+console.log("Função genérica string : " + funcaoGenerica("String"));
+class classeGenerica {
+  constructor() {
+    this.arr = [];
+  }
+  adicionaValor(item) {
+    this.arr.push(item);
+  }
+  retornaValor() {
+    return this.arr;
+  }
+  removeItem(item) {
+    let index = this.arr.indexOf(item);
+    if (index > -1) {
+      this.arr.splice(index, 1);
+    }
+  }
+}
+let classeGenerica1 = new classeGenerica();
+classeGenerica1.adicionaValor(4);
+let classeGenerica2 = new classeGenerica();
+classeGenerica2.adicionaValor("Rocky");
+console.log("Filme: " + classeGenerica2.retornaValor());
+console.log("Volume : " + classeGenerica1.retornaValor());
+let iclasseGenerica1 = new classeGenerica();
+iclasseGenerica1.adicionaValor(1);
+iclasseGenerica1.adicionaValor(2);
+iclasseGenerica1.adicionaValor(3);
+console.log(iclasseGenerica1);
+iclasseGenerica1.removeItem(2);
+console.log(iclasseGenerica1);

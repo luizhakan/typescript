@@ -191,10 +191,10 @@ let pessoa: Pessoa = {
   telefone: 887729,
 };
 
-interface PessoaJuridica extends Pessoa {
-  conta: number;
-  cpnj: number;
-}
+// interface PessoaJuridica extends Pessoa {
+//   conta: number;
+//   cpnj: number;
+// }
 // neste exemplo, PessoaJuridica estende as propriedades da interface Pessoa, e adiciona mais duas.
 interface IPessoa {
   nome: string;
@@ -208,3 +208,47 @@ let iPessoa: IPessoa = {
   email: "luizhakan2@protonmail.com",
 };
 // percebe que na interface IPessoa eu defini 4 propriedades, mas o telefone tem um '?'?, então este '?' significa que a propriedade é opcional, então depende do usuário colocar um valor ou não colocar um valor nesta propriedade.
+
+// genéricos
+function funcaoGenerica<T>(value: T): T {
+  return value;
+}
+console.log("Função genérica numéro : " + funcaoGenerica<number>(3));
+console.log("Função genérica string : " + funcaoGenerica<string>("String"));
+
+interface InterfaceGenerica<I> {
+  removeItem(item: I): any;
+}
+
+class classeGenerica<T> {
+  private arr: Array<T> = [];
+
+  adicionaValor(item: T) {
+    this.arr.push(item);
+  }
+
+  retornaValor() {
+    return this.arr;
+  }
+  removeItem(item: T) {
+    let index = this.arr.indexOf(item);
+    if (index > -1) {
+      this.arr.splice(index, 1);
+    }
+  }
+}
+
+let classeGenerica1 = new classeGenerica<number>();
+classeGenerica1.adicionaValor(4);
+let classeGenerica2 = new classeGenerica<string>();
+classeGenerica2.adicionaValor("Rocky");
+console.log("Filme: " + classeGenerica2.retornaValor());
+console.log("Volume : " + classeGenerica1.retornaValor());
+
+let iclasseGenerica1 = new classeGenerica<number>();
+iclasseGenerica1.adicionaValor(1);
+iclasseGenerica1.adicionaValor(2);
+iclasseGenerica1.adicionaValor(3);
+console.log(iclasseGenerica1);
+iclasseGenerica1.removeItem(2);
+console.log(iclasseGenerica1);
