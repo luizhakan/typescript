@@ -47,3 +47,9 @@ const findFrutas = [
 
 const eBanana = findFrutas.find((frutas) => frutas.nome === "banana");
 console.log(eBanana);
+
+// método fill
+// preenche todos os valores do array a partir do índice inicial a um índice final com um valor estático
+const fillM: Array<number> = [1, 2, 3];
+fillM.fill(4, 2);
+console.log(fillM);
