@@ -1,8 +1,8 @@
 // método map
-let numeros: Array<number> = [9, 25, 36];
-let raizes = numeros.map(Math.sqrt);
+var numeros: Array<number> = [9, 25, 36];
+var raizes = numeros.map(Math.sqrt);
 console.log("Raízes : " + raizes);
-let dobro: any = numeros.map(function (numeros) {
+var dobro: any = numeros.map(function (numeros) {
   return numeros * 2;
 });
 console.log("Dobro : " + dobro);
@@ -12,14 +12,14 @@ function maiorQue(valor: number) {
   return valor >= 10;
 }
 
-let filtroNumeros = [6, 7, 9, 10, 12, 17].filter(maiorQue);
+var filtroNumeros = [6, 7, 9, 10, 12, 17].filter(maiorQue);
 console.log("Filtro numeros menor que 10 : " + filtroNumeros);
 
 function quantidadeDe(valor: string) {
   return valor.length <= 9;
 }
 
-let filtroStrings = ["Luiz", " Schweinsteiger", " Hakan", " Messi"].filter(
+var filtroStrings = ["Luiz", " Schweinsteiger", " Hakan", " Messi"].filter(
   quantidadeDe
 );
 console.log(
@@ -53,3 +53,9 @@ console.log(eBanana);
 const fillM: Array<number> = [1, 2, 3];
 fillM.fill(4, 2);
 console.log(fillM);
+
+// método push
+var numeros: Array<number> = [1, 2, 3];
+console.log('Array antes do método push : ' + '['+numeros+']')
+numeros.push(4);
+console.log('Array depois do método push : ' + '[' + numeros+']')
