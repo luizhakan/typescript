@@ -1,5 +1,6 @@
 // APESAR DESSE ARQUIVO TER UMA SIMILARIDADE COM O PROJETO BANCO-GIT, ESTE CÓDIGO NÃO TEM NENHUMA LINHA DE CÓDIGO RETIRADA DELE!
 
+namespace Banco{
 export class Conta {
   private readonly _numeroDaConta: number;
   titular: string;
@@ -9,7 +10,6 @@ export class Conta {
     this.titular = titular.toUpperCase();
     this._saldo = saldo = 0;
   }
-
   get numeroDaConta(): number {
     return this._numeroDaConta;
   }
@@ -28,8 +28,8 @@ export class Conta {
     return console.log(`Valor sacado : R$${valor}`);
   }
 }
-
-class ContaPF extends Conta {
+}
+class ContaPF extends Banco.Conta {
   cpf: number;
   constructor(
     cpf: number,
@@ -58,7 +58,7 @@ class ContaPF extends Conta {
     return this.adicionaSaldo(valor);
   }
 }
-class ContaPJ extends Conta {
+class ContaPJ extends Banco.Conta {
   cnpj: number;
   constructor(
     cnpj: number,
@@ -86,3 +86,5 @@ const primeiraContaPJ = new ContaPJ(12123456789012, 0, "João Victor", 0);
 
 primeiraContaPF.depositar(100);
 console.log(primeiraContaPF);
+
+export { ContaPF, ContaPJ };

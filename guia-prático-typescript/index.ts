@@ -1,3 +1,5 @@
+import { ContaPF, ContaPJ } from "./orientacao-a-objetos";
+
 var languages: Array<string> = [];
 languages.push("JavaScript");
 languages.push("TypeScript");
