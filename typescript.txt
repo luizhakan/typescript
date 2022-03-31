@@ -9,3 +9,13 @@ O uso do Node.js não é opcional, pois o compilador depende desta plataforma pa
 
 /*tsconfig.json*/
 A propriedade "target" indica para o compilador tsc para qual versão do JavaScript o código escrito em TypeScript deve ser compilado. Isso significa que o resultado final serão arquivos JavaScript sem qualquer referência a sintaxe do TypeScript.
+
+/*namespaces*/
+- trabalham com escopo global, por esse motivo não precisa importar como nos modules
+- a organização dos namespaces é mais lógica e feita em objetos, não importa se está em um ou mais arquivos
+- eles não precisam de bibliotecas pra ser usado
+
+/*modules*/
+- não ficam no escopo global, por isso precisamos usar o import
+- toda implementação, se torna um module separado
+- precisam usar a biblioteca commonjs ou require.js
