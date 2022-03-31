@@ -59,3 +59,10 @@ var numeros: Array<number> = [1, 2, 3];
 console.log('Array antes do método push : ' + '['+numeros+']')
 numeros.push(4);
 console.log('Array depois do método push : ' + '[' + numeros+']')
+
+// método pop
+var marcasDeChuteiras : Array <string> = ['Nike', 'Adidas', 'Puma'];
+var marcasDeChuteirasPop = marcasDeChuteiras.pop();
+console.log('Marca removida usando o método pop : ' + marcasDeChuteirasPop);
+console.log(marcasDeChuteiras);
+// o método pop remove o último item do array e retorna o valor
