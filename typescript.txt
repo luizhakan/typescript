@@ -19,3 +19,6 @@ A propriedade "target" indica para o compilador tsc para qual versão do JavaScr
 - não ficam no escopo global, por isso precisamos usar o import
 - toda implementação, se torna um module separado
 - precisam usar a biblioteca commonjs ou require.js
+
+/*private*/
+podemos usar a palavra reservada private para definir uma classe como privada, dessa forma, apenas métodos da própria classe podem acessá-la
