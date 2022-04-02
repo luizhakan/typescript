@@ -22,3 +22,6 @@ A propriedade "target" indica para o compilador tsc para qual versão do JavaScr
 
 /*private*/
 podemos usar a palavra reservada private para definir uma classe como privada, dessa forma, apenas métodos da própria classe podem acessá-la
+
+/*noImplicitAny": true*/
+podemos usar este comando no tsconfig.json para o typescript emitir um erro sempre que o tipo any for adotado automaticamente
