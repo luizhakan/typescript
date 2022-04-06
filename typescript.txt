@@ -25,3 +25,6 @@ podemos usar a palavra reservada private para definir uma classe como privada, d
 
 /*noImplicitAny": true*/
 podemos usar este comando no tsconfig.json para o typescript emitir um erro sempre que o tipo any for adotado automaticamente
+
+/*ReadonlyArray*/
+eu posso usar esse tipo para evitar que minha lista seja alterada indevidamente por algum método, com este comando eu posso tornar minha lista em uma lista de somente leitura
