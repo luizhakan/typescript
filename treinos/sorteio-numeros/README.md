@@ -1,1 +1,0 @@
-Sim, este repositório é de TypeScript, mas eu estou usando este diretório (treinos) para treinamentos msm :)
