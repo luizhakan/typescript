@@ -1,8 +1,8 @@
 # Guia Pratico De Typescript Melhore Suas Aplicacoes Javascript
 Repositório criado para meus estudos de TypeScript
 
-- [] Introdução ao TypeScript
-- [] Conhecendo os types
+- [x] Introdução ao TypeScript
+- [x] Conhecendo os types
 - [] Estruturas de controle e repetição
 - [] POO (Programação Orientada a Objetos)
 - [] Interfaces
