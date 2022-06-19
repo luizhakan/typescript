@@ -4,8 +4,8 @@ Repositório criado para meus estudos de TypeScript
 - [x] Introdução ao TypeScript
 - [x] Conhecendo os types
 - [x] Estruturas de controle e repetição
-- [] POO (Programação Orientada a Objetos)
-- [] Interfaces
+- [x] POO (Programação Orientada a Objetos)
+- [x] Interfaces
 - [] Generics
 - [] Decorator
 - [] Modules e namespaces
