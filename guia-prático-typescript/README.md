@@ -3,7 +3,7 @@ Repositório criado para meus estudos de TypeScript
 
 - [x] Introdução ao TypeScript
 - [x] Conhecendo os types
-- [] Estruturas de controle e repetição
+- [x] Estruturas de controle e repetição
 - [] POO (Programação Orientada a Objetos)
 - [] Interfaces
 - [] Generics
