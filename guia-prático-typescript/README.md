@@ -6,7 +6,7 @@ Repositório criado para meus estudos de TypeScript
 - [x] Estruturas de controle e repetição
 - [x] POO (Programação Orientada a Objetos)
 - [x] Interfaces
-- [] Generics
+- [x] Generics
 - [] Decorator
 - [] Modules e namespaces
 - [] Visual Studio Code
