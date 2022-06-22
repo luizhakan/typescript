@@ -35,3 +35,8 @@ eu posso usar esse tipo para evitar que minha lista seja alterada indevidamente 
 
 /*innerHTML*/
 recebe uma string que é convertida para elementos do DOM
+
+/*decorator*/
+target(alvo): pode ser um método estático ou uma function construtora de uma classe.
+propertKey(chave): nome do membro da instância que será utilizado no alvo.
+descriptor(descritor): a propriedade descriptor do membro da instância, chamando o método.
