@@ -8,8 +8,8 @@ Repositório criado para meus estudos de TypeScript
 - [x] Interfaces
 - [x] Generics
 - [x] Decorator
-- [] Modules e namespaces
-- [] Visual Studio Code
+- [x] Modules e namespaces
+- [x] Visual Studio Code
 - [] Docker: Configurando ambiente de banco de dados
 - [] Criando API TypeScript, Node.js, MongoDB e Docker
 - [] Criando novas models
