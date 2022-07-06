@@ -7,7 +7,7 @@ Repositório criado para meus estudos de TypeScript
 - [x] POO (Programação Orientada a Objetos)
 - [x] Interfaces
 - [x] Generics
-- [] Decorator
+- [x] Decorator
 - [] Modules e namespaces
 - [] Visual Studio Code
 - [] Docker: Configurando ambiente de banco de dados
