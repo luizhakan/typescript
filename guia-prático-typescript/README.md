@@ -11,7 +11,3 @@ Repositório criado para meus estudos de TypeScript
 - [x] Modules e namespaces
 - [x] Visual Studio Code
 - [x] Docker: Configurando ambiente de banco de dados
-- [] Criando API TypeScript, Node.js, MongoDB e Docker
-- [] Criando novas models
-- [] Injeção de Dependência
-- [] Documentando o projeto
