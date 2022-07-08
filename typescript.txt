@@ -39,4 +39,15 @@ recebe uma string que é convertida para elementos do DOM
 /*decorator*/
 target(alvo): pode ser um método estático ou uma function construtora de uma classe.
 propertKey(chave): nome do membro da instância que será utilizado no alvo.
-descriptor(descritor): a propriedade descriptor do membro da instância, chamando o método.
+descriptor(descritor): a propriedade descriptor do membro da instância, chamando o método.	
+
+/*docker*/
+run : esse comando é utilizado para a criação de um container
+-d : esse parâmetro está informando que o container tem que rodar em background
+-p : especificar a porta que vamos usar no container. a porta que está antes dos : é a do meu host e a que está depois é a que vou utilizar
+ps : verificar se o container foi criado corretamente
+
+/*mongodb*/
+database : base de dados
+collections : para quem já trabalha ou já teve contato com um banco de dados SQL, seriam as nossas tabelas, mas pensando em quem está começando na área, uma collection é uma coleção de dados.
+fields : seriam as propriedades de nossas classes, que quando forem mapeadas para a nossa collection serão os campos onde armazenaremos os valores.
