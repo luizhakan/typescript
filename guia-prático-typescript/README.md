@@ -10,7 +10,7 @@ Repositório criado para meus estudos de TypeScript
 - [x] Decorator
 - [x] Modules e namespaces
 - [x] Visual Studio Code
-- [] Docker: Configurando ambiente de banco de dados
+- [x] Docker: Configurando ambiente de banco de dados
 - [] Criando API TypeScript, Node.js, MongoDB e Docker
 - [] Criando novas models
 - [] Injeção de Dependência
