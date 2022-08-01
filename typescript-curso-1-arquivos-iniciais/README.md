@@ -1,27 +1,27 @@
-----------------------------------------------------
-- TypeScript parte 1 []					           -
-----------------------------------------------------
-- [] Por que usar TypeScript? - 32min              -
-- [] TypeScript e compilador - 45min		       -
-- [] Benefícios da tipagem estática - 48min        -
-- [] Avançando na modelagem do domínio - 34min     -
-- [] Simplificando nosso código - 25min	           -
-- total = 3h							           -
-----------------------------------------------------
-- TypeScript parte 2 []					           -
-----------------------------------------------------
-- [] Elaborando uma solução de view - 42min        -
-- [] Herança e reaproveitamento do código - 42min  -
-- [] Visibilidade de métodos e Enumeration - 43min -
-- [] Lapidando nosso código - 31min                -
-- [] TSC e StrictNullChecks - 34min                -
-- total = 3h									   -
-----------------------------------------------------
-- TypeScript parte 3 []                            -
-----------------------------------------------------
-- Entendendo Decorators []                         -
-- Decorators de métodos []                         -
-- Decorator de propriedade []                      -
-- API externa e interface []                       -
-- Mais sobre interfaces []                         -
-----------------------------------------------------
+-----------------------------------------------------
+- TypeScript parte 1 []					            -
+-----------------------------------------------------
+- [x] Por que usar TypeScript? - 32min              -
+- [] TypeScript e compilador - 45min		        -
+- [] Benefícios da tipagem estática - 48min         -
+- [] Avançando na modelagem do domínio - 34min      -
+- [] Simplificando nosso código - 25min	            -
+- total = 3h							            -
+--------------------------------------------------- -
+- TypeScript parte 2 []					            -
+--------------------------------------------------- -
+- [] Elaborando uma solução de view - 42min         -
+- [] Herança e reaproveitamento do código - 42min   -
+- [] Visibilidade de métodos e Enumeration - 43min  -
+- [] Lapidando nosso código - 31min                 -
+- [] TSC e StrictNullChecks - 34min                 -
+- total = 3h									    -
+-----------------------------------------------------
+- TypeScript parte 3 []                             -
+-----------------------------------------------------
+- Entendendo Decorators []                          -
+- Decorators de métodos []                          -
+- Decorator de propriedade []                       -
+- API externa e interface []                        -
+- Mais sobre interfaces []                          -
+-----------------------------------------------------
