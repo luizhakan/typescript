@@ -4,7 +4,7 @@
 - [x] Por que usar TypeScript? - 32min              -
 - [x] TypeScript e compilador - 45min		        -
 - [x] Benefícios da tipagem estática - 48min        -
-- [] Avançando na modelagem do domínio - 34min      -
+- [x] Avançando na modelagem do domínio - 34min     -
 - [] Simplificando nosso código - 25min	            -
 - total = 3h							            -
 --------------------------------------------------- -
