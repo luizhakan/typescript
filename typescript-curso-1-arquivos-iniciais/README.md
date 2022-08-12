@@ -1,11 +1,11 @@
 -----------------------------------------------------
-- TypeScript parte 1 []					            -
+- TypeScript parte 1 [x]				            -
 -----------------------------------------------------
 - [x] Por que usar TypeScript? - 32min              -
 - [x] TypeScript e compilador - 45min		        -
 - [x] Benefícios da tipagem estática - 48min        -
 - [x] Avançando na modelagem do domínio - 34min     -
-- [] Simplificando nosso código - 25min	            -
+- [x] Simplificando nosso código - 25min            -
 - total = 3h							            -
 --------------------------------------------------- -
 - TypeScript parte 2 []					            -
