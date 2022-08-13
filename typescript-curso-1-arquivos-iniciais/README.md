@@ -10,7 +10,7 @@
 --------------------------------------------------- -
 - TypeScript parte 2 []					            -
 --------------------------------------------------- -
-- [] Elaborando uma solução de view - 42min         -
+- [x] Elaborando uma solução de view - 42min        -
 - [] Herança e reaproveitamento do código - 42min   -
 - [] Visibilidade de métodos e Enumeration - 43min  -
 - [] Lapidando nosso código - 31min                 -
