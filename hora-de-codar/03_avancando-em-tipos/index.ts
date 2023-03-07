@@ -83,7 +83,7 @@ function showUserRole(role: boolean | string) {
 console.log(showUserRole(false));
 console.log(showUserRole("admin"));
 
-// type alias 
+// 12 - type alias
 type ID = string | number;
 
 function showId(id: ID) {
@@ -92,3 +92,73 @@ function showId(id: ID) {
 
 console.log(showId("123"));
 console.log(showId(123));
+
+// 13 - interface
+
+interface Point {
+  x: number;
+  y: number;
+  z: number;
+}
+
+function showCoords(point: Point) {
+  console.log(
+    `\nCoordenadas do ponto X: ${point.x} e Y: ${point.y} e Z: ${point.z}`
+  );
+}
+
+const point = {
+  x: 1,
+  y: 2,
+  z: 3,
+};
+
+showCoords(point);
+
+// interface x type alias
+
+interface Person {
+  name: string;
+}
+
+interface Person {
+  age: number;
+}
+
+const person: Person = {
+  name: "Luiz",
+  age: 20,
+};
+
+// 14 - literal types
+
+let test: "testando";
+test = "testando";
+console.log(test);
+
+function showName(name: "Luiz" | "Safira") {
+  return `O nome do usuário é: ${name}`;
+}
+
+showName("Luiz");
+// showName("João");  O argumento do tipo '"João"' não é atribuível ao parâmetro do tipo '"Luiz" | "Safira"'.ts(2345)
+
+// 15 - non-null assertion operator
+// const p = document.getElementById("some-p");
+
+// console.log(p!.innerText);
+
+// 16 - bigint
+// Os literais de BigInt não estão disponíveis ao direcionar para menos de ES2020.ts(2737)
+
+let n: bigint;
+n = 100n;
+console.log(n);
+
+// 17 - Symbol
+
+let symbolA: symbol = Symbol("a");
+let symbolB: symbol = Symbol("b");
+
+console.log(symbolA == symbolB);
+console.log(symbolA === symbolB);
