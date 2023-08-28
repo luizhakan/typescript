@@ -10,6 +10,7 @@ export class NegociacaoController {
     adiciona() {
         const negociacao = this.criaNegociacao();
         this.negociacoes.adiciona(negociacao);
+        console.log(`Negociação adicionada: Data: ${this.inputData.value} - Quantidade: ${this.inputQuantidade.value} - Valor: ${this.inputValor.value}`);
         console.log(this.negociacoes.lista());
         this.limparFormulario();
     }
