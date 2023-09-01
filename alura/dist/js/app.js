@@ -8,7 +8,12 @@ const dataFormatadaComHifen = date.toISOString().split("T")[0];
 valor.value = "1";
 data.value = dataFormatadaComHifen;
 data.focus();
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    controller.adiciona();
-});
+if (form) {
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        controller.adiciona();
+    });
+}
+else {
+    throw new Error("Não foi possível inicializar a aplicação. Verifique se o form é nulo");
+}
