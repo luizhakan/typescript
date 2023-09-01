@@ -1,12 +1,12 @@
-export abstract class View<T> {
+export abstract class View<generic> {
   protected elemento: HTMLElement;
   constructor(seletor: string) {
     this.elemento = document.querySelector(seletor);
   }
 
-  update(model: T): void {
+  public update(model: generic): void {
     this.elemento.innerHTML = this.template(model);
   }
 
-  abstract template(model: T): string;
+  protected abstract template(model: generic): string;
 }
