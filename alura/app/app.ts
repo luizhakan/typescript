@@ -1,4 +1,5 @@
 import { NegociacaoController } from "./controllers/negociacao-controller.js";
+import { domInjector } from "./decorators/dom-injector.js";
 import { NegociacoesView } from "./views/negociacoes-view.js";
 
 const controller = new NegociacaoController();
@@ -22,5 +23,16 @@ if (form) {
     controller.adiciona();
   });
 } else {
-  throw new Error("Não foi possível inicializar a aplicação. Verifique se o form é nulo");
+  throw new Error(
+    "Não foi possível inicializar a aplicação. Verifique se o form é nulo"
+  );
+}
+
+const botaoImporta = document.querySelector("#botao-importa");
+if (botaoImporta) {
+  botaoImporta.addEventListener("click", () => {
+    controller.importaDados();
+  });
+} else {
+  throw Error("Botão importa não foi encontrado");
 }
