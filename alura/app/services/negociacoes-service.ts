@@ -6,8 +6,7 @@ export class NegociacoesService {
     return fetch("http://localhost:8080/dados")
       .then((res) => res.json())
       .then((dados: APIInterface[]) => {
-        return dados.map((dado) => {
-          console.log(dado);
+        return dados.map((dado) => {console
           return new Negociacao(new Date(), dado.vezes, dado.montante);
         });
       });
